@@ -3,6 +3,37 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  color: #ffffff; 
+}
+
+.home,
+.about,
+.project,
+.services,
+.contact {
+  color: #eaeaea;
+}
+
+.about h3,
+.project p,
+.services p,
+.contact p {
+  color: #bdbdbd;
+}
+
+.btn-home2 {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+
 header {
   position: fixed;
   top: 0;
@@ -10,6 +41,16 @@ header {
   width: 100%;
   z-index: 1000;
 }
+
+#particles-js {
+  position: fixed;
+  inset: 0;
+  background-color: #0e1421;
+  z-index: -10;
+  pointer-events: none; 
+}
+
+
 
 .reveal{
   opacity: 1;
@@ -96,7 +137,7 @@ section{
   margin-bottom: 20px;
 }
 .hero-text .name{
-  color: rgb(160, 28, 28);
+  color: #e63946 ;
 }
 
 .info-home h1 {
@@ -112,7 +153,7 @@ section{
 }
 
 .info-p {
-  color: #222;
+  color: #b79e9e;
   font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
 }
@@ -124,12 +165,12 @@ section{
 .info-p2 {
   display: flex;
   gap: 1rem;
-  color: #2c2c2c;
+  color: #cdb6b6;
   font-size: 14px;
   padding-bottom: 20px;
 }
 .info-p2 i {
-  color: rgb(160, 28, 28);
+  color: #e63946;
 }
 
 .btnn {
@@ -139,7 +180,7 @@ section{
 }
 
 .btn-home1 {
-  background-color: rgb(160, 28, 28);
+  background-color: rgb(185, 49, 49);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
@@ -149,7 +190,7 @@ section{
 
 .btn-home2 {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid rgb(220, 218, 218);
   border-radius: 10px;
   padding: 10px 10px;
   cursor: pointer;
@@ -157,7 +198,7 @@ section{
 }
 
 .btn-home2:hover{
-    background-color: rgb(160, 28, 28);
+    background-color: rgb(213, 55, 55);
     color: #fff;
 }
 
@@ -165,7 +206,7 @@ section{
 hr {
   width: 90%;
   font-weight: bold;
-  color: gray;
+  color: rgb(173, 143, 143);
 }
 
 .hhr {
@@ -189,7 +230,7 @@ hr {
 
 .follow ul a {
   text-decoration: none;
-  color: rgb(160, 28, 28);
+  color: rgb(242, 96, 96);
 }
 
 .home img {
@@ -214,7 +255,7 @@ hr {
 .about h3{
     padding-bottom: 30px;
     font-size: 13px;
-    color: rgb(50, 50, 50);
+    color: rgb(191, 182, 182);
 
 }
 
@@ -272,23 +313,25 @@ hr {
     padding: 5px 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
+    border-color: white;
 }
 
 .c1 h3{
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 .c1 i{
     font-size: 18px;
-    color: rgb(160, 28, 28);
+    color: rgb(237, 71, 71);
 }
 
 
 .c1:hover {
   transform: translateY(-6px) scale(1.03);
   border-color: #ff3333;               
-  background-color: #fff5f5;               
+  background-color: #d34e4e;               
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);  
   cursor: pointer;                         
 }
@@ -305,7 +348,7 @@ hr {
 .project p{
     padding-bottom: 20px;
     font-size: 13px;
-    color: rgb(50, 50, 50); 
+    color: rgb(152, 127, 127); 
 }
 
 .project h1{
@@ -322,7 +365,7 @@ hr {
 }
 
 .info-pro p{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .projects-container {
@@ -417,7 +460,7 @@ hr {
 .services p{
     padding-bottom: 20px;
     font-size: 13px;
-    color: rgb(50, 50, 50); 
+    color: rgb(151, 131, 131); 
 }
 
 .services h1{
@@ -504,7 +547,7 @@ hr {
 .contact p{
     padding-bottom: 20px;
     font-size: 13px;
-    color: rgb(50, 50, 50); 
+    color: rgb(172, 147, 147); 
 }
 
 .contact h1{
@@ -546,12 +589,12 @@ hr {
   align-items: center;
   gap: 12px;
   font-size: 15px;
-  color: #402222;
+  color: #ffffff;
 }
 
 .contact-item i {
   font-size: 20px;
-  color: rgb(201, 45, 45);
+  color: rgb(247, 247, 247);
 }
 
 .social-links {
@@ -562,12 +605,12 @@ hr {
 .social-link {
   width: 50px;
   height: 50px;
-  background: #f0f0f0;
+  background: #f2f2f2;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #b81212;
+  color: #d01d1d;
   font-size: 20px;
   transition: all 0.3s ease;
 }
@@ -616,7 +659,7 @@ hr {
 }
 
 .btn-send {
-  background: rgb(201, 45, 45);
+  background: rgb(212, 51, 51);
   color: #fff;
   border: none;
   padding: 12px 25px;

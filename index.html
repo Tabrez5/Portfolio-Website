@@ -25,6 +25,7 @@
     
   </div>
 </div> -->
+    <div id="particles-js"></div>
     <header class="header-list">
         <div class="div-list ">
             <ul class="ul-list">
@@ -306,5 +307,47 @@
 </footer>
 
      <script src="main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+     <script>
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 80,
+      density: { enable: true, value_area: 800 }
+    },
+    color: { value: "#00e5ff" },
+    shape: { type: "circle" },
+    opacity: {
+      value: 0.6,
+      random: true
+    },
+    size: {
+      value: 2,
+      random: true
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00e5ff",
+      opacity: 0.3,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.5,
+      direction: "none",
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+
 </body>
 </html>

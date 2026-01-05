@@ -157,4 +157,3 @@ window.addEventListener('load', () => {
     el.classList.add('active-reveal');
   });
 });
-
